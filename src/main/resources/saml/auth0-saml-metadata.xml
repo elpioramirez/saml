@@ -1,0 +1,23 @@
+<EntityDescriptor entityID="urn:dev-2v9z817h.auth0.com" xmlns="urn:oasis:names:tc:SAML:2.0:metadata">
+  <IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <KeyDescriptor use="signing">
+      <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <X509Data>
+          <X509Certificate>MIIDBzCCAe+gAwIBAgIJVWPiw7lkR+EdMA0GCSqGSIb3DQEBCwUAMCExHzAdBgNVBAMTFmRldi0ydjl6ODE3aC5hdXRoMC5jb20wHhcNMjAwNTExMjM1NTM5WhcNMzQwMTE4MjM1NTM5WjAhMR8wHQYDVQQDExZkZXYtMnY5ejgxN2guYXV0aDAuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtzRVUW/U9xDDcI6FyuUgMU/5XiMKOxbsYMoLgHBYbay8adSx9LphRCMqFo2oDKD2eFJ5aS8ecmjcu5kY7kzrkET7rw2Bk2BGjLs5KqY4Gzifr7zyuVvt1cdfQczSlAFqpFGDIioKzf1A7GhQV65kCY4pgVHJAm3EQ1HBiK2AoMselrtczzatKmMk0MoNa2xc0Ah+4NwXUbRtmmBTyGkqRu5sX8oI0+nQFUnMN4XkvWzKCwq4rZnz3q8OWCqU1M8boqJWPMQjP/6zkPHqdOgv/m1HbPbWOvzQJYDkmrLb8Cvhib2q9Nb3UU3P+1kpKxeH7egSY7gLn5H6iKoJvrcxnwIDAQABo0IwQDAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBRvGMlWresYqEt4uoclzFVsW99YBDAOBgNVHQ8BAf8EBAMCAoQwDQYJKoZIhvcNAQELBQADggEBAEOEP8updhdbZXconIsz+27/lg20RP0b8O4zM8zaPGqnwNjtpyF4viCllU0qwka2SfrULVVE5MkEaTLNBNfLBHzrE086haps6+/C88mropGbs0qYW01hGYcERqGcbhTRmWM9doYcES0ocRsMT3wTr6vzy6kV+7df0Y99geprNH1kkn7JpSNuxsWxezxl14mhyfAxUZD+oR4TTPZy8gFfuW8Qa0/kAiGxb7CCfXXtNfUTju7diTVcgd8miItyKUDOHcMWa51SnFgsXxrIovHZ5OdECc+1qRJH4Tbj6N94FBOqefXxU3VmhG9EAAuXLnSY6O5SNVmng55H0VHXqAkuzjc=</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </KeyDescriptor>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://dev-2v9z817h.auth0.com/samlp/HNUvM8pJLkQOJYxgvFregYEEcNgwfcFM/logout"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://dev-2v9z817h.auth0.com/samlp/HNUvM8pJLkQOJYxgvFregYEEcNgwfcFM/logout"/>
+    <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</NameIDFormat>
+    <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
+    <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://dev-2v9z817h.auth0.com/samlp/HNUvM8pJLkQOJYxgvFregYEEcNgwfcFM"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://dev-2v9z817h.auth0.com/samlp/HNUvM8pJLkQOJYxgvFregYEEcNgwfcFM"/>
+    <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="E-Mail Address" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="Given Name" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="Name" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="Surname" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+    <Attribute Name="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri" FriendlyName="Name ID" xmlns="urn:oasis:names:tc:SAML:2.0:assertion"/>
+  </IDPSSODescriptor>
+</EntityDescriptor>
